@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOBE welcom</title>
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> <a href="index.html">神戸へようこそ!!</a> </h1>
+            <nav class="menu"> 
+                <ul>
+                    <li><a href="index.html">ホーム</a> </li>
+                    <li><a href="#">観光</a> </li>
+                    <li> <a href="#">食べ物</a></li>
+                    <li><a href="#">予約</a> </li>
+                    <li><a href="contact.html">コンタクト</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <img class="kobe" src="./images/contact.jpg" alt="">
+            </div>
+        </header>
+        <div class="main">
+            <h1>問い合わせ</h1>
+            <form action="/form" method="POST">
+                <label>名前</label><br />
+                <input type="text" name="name" placeholder="カタカナで入力しなさい。" maxlength="30"/><br />
+                
+                <label>住所</label><br />
+                <input type="text" name="address" placeholder="号室まで入力しなさい。" maxlength="150"/><br />
+                
+                <label>問い合わせ内容</label><br />
+                <textarea name="comment" cols="40" rows="5"></textarea><br />
+            </form>
+            <div class="checkbox">
+                <label>問い合わせのタイトルを選択しなさい</label>
+                <ul style="list-style-type: none;">
+                    <li><input type="checkbox" name="title" value="kanko" checked> 観光</li>
+                    <li><input type="checkbox" name="title" value="tabemono"> 食べ物 </li>
+                    <li><input type="checkbox" name="title" value="yoyaku"> 予約</li>
+                    <li><input type="checkbox" name="title" value="sonota"> その他</li>
+                </ul>
+            </div>                
+            <div class="send_button">
+                <input  type="submit" value="送信" />
+            </div>
+
+            <div class="bottom">
+                <div class="bottom-inner">
+                    <div class="copyright">
+                    <p>Copyright &copy; Z21003 2022/07</p>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+    
+</body>
+</html>
